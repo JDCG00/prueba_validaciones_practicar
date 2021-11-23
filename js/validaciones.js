@@ -25,7 +25,7 @@ function iniciar() {
 
 function unoDaw() {
     /*console.log('funciona');*/
-/*
+
     //Selecciona el párrafo de curso
     let pCurso = document.getElementById('pCurso')
     //Crea el br
@@ -52,13 +52,12 @@ function unoDaw() {
     select.appendChild(option3)
     let texto3 = document.createTextNode('PROG')
     option3.appendChild(texto3)
-    */
+
 }
 //Función para añadir módulos 2DAW
 
 function dosDaw() {
     //console.log('funciona');
-/*
     if (document.getElementById==('o1DAW')) {
         document.get
     }
@@ -88,70 +87,9 @@ function dosDaw() {
     select.appendChild(option3)
     let texto3 = document.createTextNode('DWES')
     option3.appendChild(texto3)
-    */
 }
 
-//Función para añadir módulos de 1DAW y 2DAW
 
-function addModulo() {
-    switch (document.getElementById()) {
-        case 'o1DAW':
-            //Selecciona el párrafo de curso
-            let pCurso = document.getElementById('pCurso')
-            //Crea el br
-            let br = document.createElement('br')
-            pCurso.appendChild(br)
-            //Crea el label
-            let label = document.createElement('label')
-            pCurso.appendChild(label)
-            let textoLabel = document.createTextNode('Módulos 1DAW')
-            label.appendChild(textoLabel)
-            //Crea el select
-            let select = document.createElement('select')
-            pCurso.appendChild(select)
-            //Crea los options
-            let option1 = document.createElement('option')
-            select.appendChild(option1)
-            let texto1 = document.createTextNode('SI')
-            option1.appendChild(texto1)
-            let option2 = document.createElement('option')
-            select.appendChild(option2)
-            let texto2 = document.createTextNode('LM')
-            option2.appendChild(texto2)
-            let option3 = document.createElement('option')
-            select.appendChild(option3)
-            let texto3 = document.createTextNode('PROG')
-            option3.appendChild(texto3)
-            break;
-        case 'o2DAW':
-            //Selecciona el párrafo de curso
-            let pCurso = document.getElementById('pCurso')
-            //Crea el br
-            let br = document.createElement('br')
-            pCurso.appendChild(br)
-            //Crea el label
-            let label = document.createElement('label')
-            pCurso.appendChild(label)
-            let textoLabel = document.createTextNode('Módulos 2DAW')
-            label.appendChild(textoLabel)
-            //Crea el select
-            let select = document.createElement('select')
-            pCurso.appendChild(select)
-            //Crea los options
-            let option1 = document.createElement('option')
-            select.appendChild(option1)
-            let texto1 = document.createTextNode('DWEC')
-            option1.appendChild(texto1)
-            let option2 = document.createElement('option')
-            select.appendChild(option2)
-            let texto2 = document.createTextNode('DIW')
-            option2.appendChild(texto2)
-            let option3 = document.createElement('option')
-            select.appendChild(option3)
-            let texto3 = document.createTextNode('DWES')
-            option3.appendChild(texto3)
-    }
-}
 //Función para calcular la media y establacer dicho valor en el span
 
 function media() {
@@ -222,4 +160,8 @@ function enviar() {
         div.textContent='Error'
     }
 
+}
+function borrar() {
+    let label = document.querySelector('label')
+    label.remove()
 }

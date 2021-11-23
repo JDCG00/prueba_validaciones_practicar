@@ -26,8 +26,8 @@
     <label for=sCurso>Curso</label>
     <select id=sCurso>
       <option value=null> </option>
-      <option value=1DAW id="o1DAW" onclick="addModulo()">Primero de DAW</option>
-      <option value=2DAW id="o2DAW" onclick="addModulo()">Segundo de DAW</option>
+      <option value=1DAW id="o1DAW" onclick="unoDaw()">Primero de DAW</option>
+      <option value=2DAW id="o2DAW" onclick="dosDaw()">Segundo de DAW</option>
     </select>
   </p>
 
@@ -40,7 +40,7 @@
   </p>
 
   <p>
-    <button type=button id=btnCero onclick="cero();media()">Poner a Cero</button>
+    <button type=button id=btnCero onclick="cero();media();borrar();">Poner a Cero</button>
     <button onclick="enviar()">Enviar</button>
   </p>
 
